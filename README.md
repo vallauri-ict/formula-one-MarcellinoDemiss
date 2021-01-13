@@ -6,10 +6,10 @@
 ##### CONTIENE
 
 ## PROGETTO CONSOLE
-# contenente un menù nel quale puoi aggiungere delle tabelle oppure effetturare un reset del database
+##### contenente un menù nel quale puoi aggiungere delle tabelle oppure effetturare un reset del database
 
 ## PROGETTO DLL
-# contenente una libreria nel quale sono presenti delle funzioni utilizzate nella parte WebForm
+##### contenente una libreria nel quale sono presenti delle funzioni utilizzate nella parte WebForm
 
-## PROGETTO WebForm
-# contenente un progetto WebForm nel quale puoi visualizzare le tabelle presenti da browser
+## PROGETTO WEBFORM
+##### contenente un progetto WebForm nel quale puoi visualizzare le tabelle presenti da browser
