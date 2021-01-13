@@ -1,0 +1,6 @@
+E:\Scuola\5^ Superiore\Informatica\Laboratorio\formula-one-MarcellinoDemiss-master\FormulaOneDLL\bin\Debug\FormulaOneDLL.dll
+E:\Scuola\5^ Superiore\Informatica\Laboratorio\formula-one-MarcellinoDemiss-master\FormulaOneDLL\bin\Debug\FormulaOneDLL.pdb
+E:\Scuola\5^ Superiore\Informatica\Laboratorio\formula-one-MarcellinoDemiss-master\FormulaOneDLL\obj\Debug\FormulaOneDLL.csprojAssemblyReference.cache
+E:\Scuola\5^ Superiore\Informatica\Laboratorio\formula-one-MarcellinoDemiss-master\FormulaOneDLL\obj\Debug\FormulaOneDLL.dll
+E:\Scuola\5^ Superiore\Informatica\Laboratorio\formula-one-MarcellinoDemiss-master\FormulaOneDLL\obj\Debug\FormulaOneDLL.pdb
+E:\Scuola\5^ Superiore\Informatica\Laboratorio\formula-one-MarcellinoDemiss-master\FormulaOneDLL\obj\Debug\FormulaOneDLL.csproj.CoreCompileInputs.cache
