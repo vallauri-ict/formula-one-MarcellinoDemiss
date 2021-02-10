@@ -3,4 +3,15 @@
 
 #### Entity Relationship Model
 
-##### COUNTRY
+##### CONTIENE
+
+## PROGETTO CONSOLE
+##### contenente un menù nel quale puoi aggiungere delle tabelle oppure effetturare un reset del database
+
+## PROGETTO DLL
+##### contenente una libreria nel quale sono presenti delle funzioni utilizzate nella parte WebForm
+
+## PROGETTO WEB FORM
+##### contenente un progetto WebForm nel quale puoi visualizzare le tabelle presenti da browser
+
+## PROGETTO WEB SERVICES
