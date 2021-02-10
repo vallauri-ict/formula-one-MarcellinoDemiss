@@ -52,5 +52,82 @@ namespace FormulaOneDLL
             }
             return retVal;
         }
+
+        public List<string> GetCountries()
+        {
+            List<string> retVal = new List<string>();
+            using (SqlConnection dbConn = new SqlConnection())
+            {
+                dbConn.ConnectionString = CONNECTION_STRING;
+                Console.WriteLine("\nQuery data example: ");
+                Console.WriteLine("\n=========================================\n");
+                String sql = "SELECT * FROM country";
+                using (SqlCommand command = new SqlCommand(sql, dbConn))
+                {
+                    dbConn.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string countryCode = reader.GetString(0);
+                            string countryName = reader.GetString(1);
+                            Console.WriteLine("{0} {1} ", countryCode, countryName);
+                            retVal.Add(countryCode + " - " + countryName);
+                        }
+                    }
+                }
+            }
+            return retVal;
+        }
+
+        public List<Country> GetCountriesObj()
+        {
+            List<Country> retVal = new List<Country>();
+            using (SqlConnection dbConn = new SqlConnection())
+            {
+                dbConn.ConnectionString = CONNECTION_STRING;
+                String sql = "SELECT * FROM country";
+                using (SqlCommand command = new SqlCommand(sql, dbConn))
+                {
+                    dbConn.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string countryCode = reader.GetString(0);
+                            string countryName = reader.GetString(1);
+                            Console.WriteLine("{0} {1} ", countryCode, countryName);
+                            retVal.Add(new Country(countryCode, countryName));
+                        }
+                    }
+                }
+            }
+            return retVal;
+        }
+
+        public Country GetCountry(string isoCode)
+        {
+            Country retVal = null;
+            using (SqlConnection dbConn = new SqlConnection())
+            {
+                dbConn.ConnectionString = CONNECTION_STRING;
+                String sql = "SELECT * FROM country WHERE countryCode='" + isoCode + "';";
+                using (SqlCommand command = new SqlCommand(sql, dbConn))
+                {
+                    dbConn.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string countryCode = reader.GetString(0);
+                            string countryName = reader.GetString(1);
+                            Console.WriteLine("{0} {1} ", countryCode, countryName);
+                            retVal = new Country(countryCode, countryName);
+                        }
+                    }
+                }
+            }
+            return retVal;
+        }
     }
 }
